@@ -1,0 +1,23 @@
+platform :ios, '8.0'
+
+# ignore all warnings from all pods
+inhibit_all_warnings!
+
+target 'FlyImageView' do
+	pod 'SDWebImage', '~> 3.7'
+	pod 'FlyImage', :path => '../FlyImage.podspec'
+end
+
+target 'FlyImageIconView' do
+	pod 'SDWebImage', '~> 3.7'
+	pod 'FlyImage', :path => '../FlyImage.podspec'
+end
+
+target 'WebP' do
+	pod 'SDWebImage/WebP', '~> 3.7'
+	pod 'FlyImage/WebP', :path => '../FlyImage.podspec'
+end
+
+target 'SingleView' do
+	pod 'FlyImage', :path => '../FlyImage.podspec'
+end

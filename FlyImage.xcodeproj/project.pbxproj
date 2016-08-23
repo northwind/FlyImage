@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63D1D241E0B38FBE0700B2B2 /* libPods-FlyImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D2BCD141491AB1301A46CC /* libPods-FlyImage.a */; };
+		DD4D2C511D5C678E001F5D77 /* FlyImageRetrieveOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DD4D2C4F1D5C678E001F5D77 /* FlyImageRetrieveOperation.h */; };
+		DD4D2C521D5C678E001F5D77 /* FlyImageRetrieveOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4D2C501D5C678E001F5D77 /* FlyImageRetrieveOperation.m */; };
+		DD4D2C531D5C678E001F5D77 /* FlyImageRetrieveOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4D2C501D5C678E001F5D77 /* FlyImageRetrieveOperation.m */; };
+		DD9D96E01CC50336008F279E /* FlyImage.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9D96DF1CC50336008F279E /* FlyImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD9D96E71CC50336008F279E /* FlyImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9D96DC1CC50336008F279E /* FlyImage.framework */; };
+		DD9D97141CC5034A008F279E /* FlyImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9D96F71CC5034A008F279E /* FlyImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD9D97151CC5034A008F279E /* FlyImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9D96F81CC5034A008F279E /* FlyImageCache.m */; };
+		DD9D97161CC5034A008F279E /* FlyImageCacheProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9D96F91CC5034A008F279E /* FlyImageCacheProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD9D97171CC5034A008F279E /* FlyImageDataFile.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9D96FA1CC5034A008F279E /* FlyImageDataFile.h */; };
+		DD9D97181CC5034A008F279E /* FlyImageDataFile.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9D96FB1CC5034A008F279E /* FlyImageDataFile.m */; };
+		DD9D97191CC5034A008F279E /* FlyImageDataFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9D96FC1CC5034A008F279E /* FlyImageDataFileManager.h */; };
+		DD9D971A1CC5034A008F279E /* FlyImageDataFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9D96FD1CC5034A008F279E /* FlyImageDataFileManager.m */; };
+		DD9D971B1CC5034A008F279E /* FlyImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9D96FE1CC5034A008F279E /* FlyImageDecoder.h */; };
+		DD9D971C1CC5034A008F279E /* FlyImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9D96FF1CC5034A008F279E /* FlyImageDecoder.m */; };
+		DD9D971D1CC5034A008F279E /* FlyImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9D97001CC5034A008F279E /* FlyImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD9D971E1CC5034A008F279E /* FlyImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9D97011CC5034A008F279E /* FlyImageDownloader.m */; };
+		DD9D971F1CC5034A008F279E /* FlyImageEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9D97021CC5034A008F279E /* FlyImageEncoder.h */; };
+		DD9D97201CC5034A008F279E /* FlyImageEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9D97031CC5034A008F279E /* FlyImageEncoder.m */; };
+		DD9D97211CC5034A008F279E /* FlyImageIconCache.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9D97041CC5034A008F279E /* FlyImageIconCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD9D97221CC5034A008F279E /* FlyImageIconCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9D97051CC5034A008F279E /* FlyImageIconCache.m */; };
+		DD9D97231CC5034A008F279E /* FlyImageUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9D97061CC5034A008F279E /* FlyImageUtils.h */; };
+		DD9D97241CC5034A008F279E /* FlyImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9D97071CC5034A008F279E /* FlyImageUtils.m */; };
+		DD9D97341CC503A2008F279E /* FlyImageCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9D972E1CC503A2008F279E /* FlyImageCacheTests.m */; };
+		DD9D97351CC503A2008F279E /* FlyImageDataFileManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9D972F1CC503A2008F279E /* FlyImageDataFileManagerTests.m */; };
+		DD9D97361CC503A2008F279E /* FlyImageDataFileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9D97301CC503A2008F279E /* FlyImageDataFileTests.m */; };
+		DD9D97371CC503A2008F279E /* FlyImageDownloadManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9D97311CC503A2008F279E /* FlyImageDownloadManagerTests.m */; };
+		DD9D97381CC503A2008F279E /* FlyImageIconCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9D97321CC503A2008F279E /* FlyImageIconCacheTests.m */; };
+		DDD8FB5B1D59D0F900821392 /* FlyImageIconCacheUIProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = DDD8FB5A1D59D0F900821392 /* FlyImageIconCacheUIProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDD8FB5E1D59D24900821392 /* FlyImageCacheUIProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = DDD8FB5D1D59D24900821392 /* FlyImageCacheUIProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDDAE6AE1CE6E10C00B3CCCC /* CALayer+FlyImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = DDDAE6A21CE6E10C00B3CCCC /* CALayer+FlyImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDDAE6AF1CE6E10C00B3CCCC /* CALayer+FlyImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDAE6A31CE6E10C00B3CCCC /* CALayer+FlyImageCache.m */; };
+		DDDAE6B01CE6E10C00B3CCCC /* CALayer+FlyImageIconCache.h in Headers */ = {isa = PBXBuildFile; fileRef = DDDAE6A41CE6E10C00B3CCCC /* CALayer+FlyImageIconCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDDAE6B11CE6E10C00B3CCCC /* CALayer+FlyImageIconCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDAE6A51CE6E10C00B3CCCC /* CALayer+FlyImageIconCache.m */; };
+		DDDAE6B21CE6E10C00B3CCCC /* FlyImageIconRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = DDDAE6A61CE6E10C00B3CCCC /* FlyImageIconRenderer.h */; };
+		DDDAE6B31CE6E10C00B3CCCC /* FlyImageIconRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDAE6A71CE6E10C00B3CCCC /* FlyImageIconRenderer.m */; };
+		DDDAE6B41CE6E10C00B3CCCC /* FlyImageRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = DDDAE6A81CE6E10C00B3CCCC /* FlyImageRenderer.h */; };
+		DDDAE6B51CE6E10C00B3CCCC /* FlyImageRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDAE6A91CE6E10C00B3CCCC /* FlyImageRenderer.m */; };
+		DDDAE6B61CE6E10C00B3CCCC /* UIImageView+FlyImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = DDDAE6AA1CE6E10C00B3CCCC /* UIImageView+FlyImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDDAE6B71CE6E10C00B3CCCC /* UIImageView+FlyImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDAE6AB1CE6E10C00B3CCCC /* UIImageView+FlyImageCache.m */; };
+		DDDAE6B81CE6E10C00B3CCCC /* UIImageView+FlyImageIconCache.h in Headers */ = {isa = PBXBuildFile; fileRef = DDDAE6AC1CE6E10C00B3CCCC /* UIImageView+FlyImageIconCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDDAE6B91CE6E10C00B3CCCC /* UIImageView+FlyImageIconCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDAE6AD1CE6E10C00B3CCCC /* UIImageView+FlyImageIconCache.m */; };
+		DDF65B111CC70DE50066B12F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF65B101CC70DE50066B12F /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD9D96E81CC50336008F279E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9D96D31CC50336008F279E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD9D96DB1CC50336008F279E;
+			remoteInfo = FlyImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2054736E2EDA981DF80AD030 /* Pods-FlyImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlyImage/Pods-FlyImage.release.xcconfig"; sourceTree = "<group>"; };
+		C05497892C966A58859B6B98 /* Pods-FlyImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlyImage/Pods-FlyImage.debug.xcconfig"; sourceTree = "<group>"; };
+		DD4C0C911CCEF78700FF7E28 /* libwebp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libwebp.framework; path = "../../../Library/Developer/Xcode/DerivedData/FlyImage-dsmditzgpqdvcjaeenutizhwdsdm/Build/Products/Debug-iphonesimulator/libwebp.framework"; sourceTree = "<group>"; };
+		DD4D2C4F1D5C678E001F5D77 /* FlyImageRetrieveOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlyImageRetrieveOperation.h; path = FlyImage/Core/FlyImageRetrieveOperation.h; sourceTree = SOURCE_ROOT; };
+		DD4D2C501D5C678E001F5D77 /* FlyImageRetrieveOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlyImageRetrieveOperation.m; path = FlyImage/Core/FlyImageRetrieveOperation.m; sourceTree = SOURCE_ROOT; };
+		DD9D96DC1CC50336008F279E /* FlyImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlyImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9D96DF1CC50336008F279E /* FlyImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyImage.h; sourceTree = "<group>"; };
+		DD9D96E11CC50336008F279E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9D96E61CC50336008F279E /* FlyImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9D96ED1CC50336008F279E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9D96F71CC5034A008F279E /* FlyImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyImageCache.h; sourceTree = "<group>"; };
+		DD9D96F81CC5034A008F279E /* FlyImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageCache.m; sourceTree = "<group>"; };
+		DD9D96F91CC5034A008F279E /* FlyImageCacheProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyImageCacheProtocol.h; sourceTree = "<group>"; };
+		DD9D96FA1CC5034A008F279E /* FlyImageDataFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyImageDataFile.h; sourceTree = "<group>"; };
+		DD9D96FB1CC5034A008F279E /* FlyImageDataFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageDataFile.m; sourceTree = "<group>"; };
+		DD9D96FC1CC5034A008F279E /* FlyImageDataFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyImageDataFileManager.h; sourceTree = "<group>"; };
+		DD9D96FD1CC5034A008F279E /* FlyImageDataFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageDataFileManager.m; sourceTree = "<group>"; };
+		DD9D96FE1CC5034A008F279E /* FlyImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyImageDecoder.h; sourceTree = "<group>"; };
+		DD9D96FF1CC5034A008F279E /* FlyImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageDecoder.m; sourceTree = "<group>"; };
+		DD9D97001CC5034A008F279E /* FlyImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyImageDownloader.h; sourceTree = "<group>"; };
+		DD9D97011CC5034A008F279E /* FlyImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageDownloader.m; sourceTree = "<group>"; };
+		DD9D97021CC5034A008F279E /* FlyImageEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyImageEncoder.h; sourceTree = "<group>"; };
+		DD9D97031CC5034A008F279E /* FlyImageEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageEncoder.m; sourceTree = "<group>"; };
+		DD9D97041CC5034A008F279E /* FlyImageIconCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyImageIconCache.h; sourceTree = "<group>"; };
+		DD9D97051CC5034A008F279E /* FlyImageIconCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageIconCache.m; sourceTree = "<group>"; };
+		DD9D97061CC5034A008F279E /* FlyImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyImageUtils.h; sourceTree = "<group>"; };
+		DD9D97071CC5034A008F279E /* FlyImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageUtils.m; sourceTree = "<group>"; };
+		DD9D972E1CC503A2008F279E /* FlyImageCacheTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageCacheTests.m; sourceTree = "<group>"; };
+		DD9D972F1CC503A2008F279E /* FlyImageDataFileManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageDataFileManagerTests.m; sourceTree = "<group>"; };
+		DD9D97301CC503A2008F279E /* FlyImageDataFileTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageDataFileTests.m; sourceTree = "<group>"; };
+		DD9D97311CC503A2008F279E /* FlyImageDownloadManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageDownloadManagerTests.m; sourceTree = "<group>"; };
+		DD9D97321CC503A2008F279E /* FlyImageIconCacheTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageIconCacheTests.m; sourceTree = "<group>"; };
+		DDD8FB5A1D59D0F900821392 /* FlyImageIconCacheUIProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyImageIconCacheUIProtocol.h; sourceTree = "<group>"; };
+		DDD8FB5D1D59D24900821392 /* FlyImageCacheUIProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyImageCacheUIProtocol.h; sourceTree = "<group>"; };
+		DDDAE6A21CE6E10C00B3CCCC /* CALayer+FlyImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+FlyImageCache.h"; sourceTree = "<group>"; };
+		DDDAE6A31CE6E10C00B3CCCC /* CALayer+FlyImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+FlyImageCache.m"; sourceTree = "<group>"; };
+		DDDAE6A41CE6E10C00B3CCCC /* CALayer+FlyImageIconCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+FlyImageIconCache.h"; sourceTree = "<group>"; };
+		DDDAE6A51CE6E10C00B3CCCC /* CALayer+FlyImageIconCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+FlyImageIconCache.m"; sourceTree = "<group>"; };
+		DDDAE6A61CE6E10C00B3CCCC /* FlyImageIconRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyImageIconRenderer.h; sourceTree = "<group>"; };
+		DDDAE6A71CE6E10C00B3CCCC /* FlyImageIconRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageIconRenderer.m; sourceTree = "<group>"; };
+		DDDAE6A81CE6E10C00B3CCCC /* FlyImageRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyImageRenderer.h; sourceTree = "<group>"; };
+		DDDAE6A91CE6E10C00B3CCCC /* FlyImageRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageRenderer.m; sourceTree = "<group>"; };
+		DDDAE6AA1CE6E10C00B3CCCC /* UIImageView+FlyImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+FlyImageCache.h"; sourceTree = "<group>"; };
+		DDDAE6AB1CE6E10C00B3CCCC /* UIImageView+FlyImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FlyImageCache.m"; sourceTree = "<group>"; };
+		DDDAE6AC1CE6E10C00B3CCCC /* UIImageView+FlyImageIconCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+FlyImageIconCache.h"; sourceTree = "<group>"; };
+		DDDAE6AD1CE6E10C00B3CCCC /* UIImageView+FlyImageIconCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FlyImageIconCache.m"; sourceTree = "<group>"; };
+		DDF65B101CC70DE50066B12F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E7D2BCD141491AB1301A46CC /* libPods-FlyImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlyImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD9D96D81CC50336008F279E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF65B111CC70DE50066B12F /* UIKit.framework in Frameworks */,
+				63D1D241E0B38FBE0700B2B2 /* libPods-FlyImage.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9D96E31CC50336008F279E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9D96E71CC50336008F279E /* FlyImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD9D96D21CC50336008F279E = {
+			isa = PBXGroup;
+			children = (
+				DD9D96DE1CC50336008F279E /* FlyImage */,
+				DD9D96EA1CC50336008F279E /* FlyImageTests */,
+				DD9D96DD1CC50336008F279E /* Products */,
+				E115FD25013B3B36CF3058C3 /* Frameworks */,
+				F9DB01F8FD4F9561A9D733F0 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		DD9D96DD1CC50336008F279E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD9D96DC1CC50336008F279E /* FlyImage.framework */,
+				DD9D96E61CC50336008F279E /* FlyImageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD9D96DE1CC50336008F279E /* FlyImage */ = {
+			isa = PBXGroup;
+			children = (
+				DD9D96F61CC5034A008F279E /* Core */,
+				DDDAE6A11CE6E10C00B3CCCC /* UI */,
+				DD9D96DF1CC50336008F279E /* FlyImage.h */,
+				DD9D96E11CC50336008F279E /* Info.plist */,
+			);
+			path = FlyImage;
+			sourceTree = "<group>";
+		};
+		DD9D96EA1CC50336008F279E /* FlyImageTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD9D972E1CC503A2008F279E /* FlyImageCacheTests.m */,
+				DD9D972F1CC503A2008F279E /* FlyImageDataFileManagerTests.m */,
+				DD9D97301CC503A2008F279E /* FlyImageDataFileTests.m */,
+				DD9D97311CC503A2008F279E /* FlyImageDownloadManagerTests.m */,
+				DD9D97321CC503A2008F279E /* FlyImageIconCacheTests.m */,
+				DD9D96ED1CC50336008F279E /* Info.plist */,
+			);
+			path = FlyImageTests;
+			sourceTree = "<group>";
+		};
+		DD9D96F61CC5034A008F279E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DD9D96F71CC5034A008F279E /* FlyImageCache.h */,
+				DD9D96F81CC5034A008F279E /* FlyImageCache.m */,
+				DD9D96F91CC5034A008F279E /* FlyImageCacheProtocol.h */,
+				DD9D96FA1CC5034A008F279E /* FlyImageDataFile.h */,
+				DD9D96FB1CC5034A008F279E /* FlyImageDataFile.m */,
+				DD9D96FC1CC5034A008F279E /* FlyImageDataFileManager.h */,
+				DD9D96FD1CC5034A008F279E /* FlyImageDataFileManager.m */,
+				DD9D96FE1CC5034A008F279E /* FlyImageDecoder.h */,
+				DD9D96FF1CC5034A008F279E /* FlyImageDecoder.m */,
+				DD9D97001CC5034A008F279E /* FlyImageDownloader.h */,
+				DD9D97011CC5034A008F279E /* FlyImageDownloader.m */,
+				DD9D97021CC5034A008F279E /* FlyImageEncoder.h */,
+				DD9D97031CC5034A008F279E /* FlyImageEncoder.m */,
+				DD9D97041CC5034A008F279E /* FlyImageIconCache.h */,
+				DD9D97051CC5034A008F279E /* FlyImageIconCache.m */,
+				DD9D97061CC5034A008F279E /* FlyImageUtils.h */,
+				DD9D97071CC5034A008F279E /* FlyImageUtils.m */,
+				DD4D2C4F1D5C678E001F5D77 /* FlyImageRetrieveOperation.h */,
+				DD4D2C501D5C678E001F5D77 /* FlyImageRetrieveOperation.m */,
+			);
+			name = Core;
+			path = core;
+			sourceTree = "<group>";
+		};
+		DDDAE6A11CE6E10C00B3CCCC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DDDAE6A21CE6E10C00B3CCCC /* CALayer+FlyImageCache.h */,
+				DDDAE6A31CE6E10C00B3CCCC /* CALayer+FlyImageCache.m */,
+				DDDAE6A41CE6E10C00B3CCCC /* CALayer+FlyImageIconCache.h */,
+				DDDAE6A51CE6E10C00B3CCCC /* CALayer+FlyImageIconCache.m */,
+				DDDAE6A61CE6E10C00B3CCCC /* FlyImageIconRenderer.h */,
+				DDDAE6A71CE6E10C00B3CCCC /* FlyImageIconRenderer.m */,
+				DDDAE6A81CE6E10C00B3CCCC /* FlyImageRenderer.h */,
+				DDDAE6A91CE6E10C00B3CCCC /* FlyImageRenderer.m */,
+				DDDAE6AA1CE6E10C00B3CCCC /* UIImageView+FlyImageCache.h */,
+				DDDAE6AB1CE6E10C00B3CCCC /* UIImageView+FlyImageCache.m */,
+				DDDAE6AC1CE6E10C00B3CCCC /* UIImageView+FlyImageIconCache.h */,
+				DDDAE6AD1CE6E10C00B3CCCC /* UIImageView+FlyImageIconCache.m */,
+				DDD8FB5A1D59D0F900821392 /* FlyImageIconCacheUIProtocol.h */,
+				DDD8FB5D1D59D24900821392 /* FlyImageCacheUIProtocol.h */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E115FD25013B3B36CF3058C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD4C0C911CCEF78700FF7E28 /* libwebp.framework */,
+				DDF65B101CC70DE50066B12F /* UIKit.framework */,
+				E7D2BCD141491AB1301A46CC /* libPods-FlyImage.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9DB01F8FD4F9561A9D733F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C05497892C966A58859B6B98 /* Pods-FlyImage.debug.xcconfig */,
+				2054736E2EDA981DF80AD030 /* Pods-FlyImage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DD9D96D91CC50336008F279E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9D97231CC5034A008F279E /* FlyImageUtils.h in Headers */,
+				DD9D97141CC5034A008F279E /* FlyImageCache.h in Headers */,
+				DD4D2C511D5C678E001F5D77 /* FlyImageRetrieveOperation.h in Headers */,
+				DD9D971D1CC5034A008F279E /* FlyImageDownloader.h in Headers */,
+				DD9D97211CC5034A008F279E /* FlyImageIconCache.h in Headers */,
+				DDDAE6B01CE6E10C00B3CCCC /* CALayer+FlyImageIconCache.h in Headers */,
+				DDD8FB5B1D59D0F900821392 /* FlyImageIconCacheUIProtocol.h in Headers */,
+				DDDAE6B61CE6E10C00B3CCCC /* UIImageView+FlyImageCache.h in Headers */,
+				DDDAE6B81CE6E10C00B3CCCC /* UIImageView+FlyImageIconCache.h in Headers */,
+				DDDAE6AE1CE6E10C00B3CCCC /* CALayer+FlyImageCache.h in Headers */,
+				DDD8FB5E1D59D24900821392 /* FlyImageCacheUIProtocol.h in Headers */,
+				DD9D97191CC5034A008F279E /* FlyImageDataFileManager.h in Headers */,
+				DDDAE6B21CE6E10C00B3CCCC /* FlyImageIconRenderer.h in Headers */,
+				DDDAE6B41CE6E10C00B3CCCC /* FlyImageRenderer.h in Headers */,
+				DD9D97161CC5034A008F279E /* FlyImageCacheProtocol.h in Headers */,
+				DD9D97171CC5034A008F279E /* FlyImageDataFile.h in Headers */,
+				DD9D971B1CC5034A008F279E /* FlyImageDecoder.h in Headers */,
+				DD9D96E01CC50336008F279E /* FlyImage.h in Headers */,
+				DD9D971F1CC5034A008F279E /* FlyImageEncoder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DD9D96DB1CC50336008F279E /* FlyImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9D96F01CC50336008F279E /* Build configuration list for PBXNativeTarget "FlyImage" */;
+			buildPhases = (
+				682C7851251E962AD95E8BD5 /* [CP] Check Pods Manifest.lock */,
+				DD9D96D71CC50336008F279E /* Sources */,
+				DD9D96D81CC50336008F279E /* Frameworks */,
+				DD9D96D91CC50336008F279E /* Headers */,
+				DD9D96DA1CC50336008F279E /* Resources */,
+				5B8B2D959E77A65AC0CAB76B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlyImage;
+			productName = FlyImage;
+			productReference = DD9D96DC1CC50336008F279E /* FlyImage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DD9D96E51CC50336008F279E /* FlyImageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9D96F31CC50336008F279E /* Build configuration list for PBXNativeTarget "FlyImageTests" */;
+			buildPhases = (
+				DD9D96E21CC50336008F279E /* Sources */,
+				DD9D96E31CC50336008F279E /* Frameworks */,
+				DD9D96E41CC50336008F279E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD9D96E91CC50336008F279E /* PBXTargetDependency */,
+			);
+			name = FlyImageTests;
+			productName = FlyImageTests;
+			productReference = DD9D96E61CC50336008F279E /* FlyImageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD9D96D31CC50336008F279E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Augmn;
+				TargetAttributes = {
+					DD9D96DB1CC50336008F279E = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					DD9D96E51CC50336008F279E = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = DD9D96D61CC50336008F279E /* Build configuration list for PBXProject "FlyImage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DD9D96D21CC50336008F279E;
+			productRefGroup = DD9D96DD1CC50336008F279E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD9D96DB1CC50336008F279E /* FlyImage */,
+				DD9D96E51CC50336008F279E /* FlyImageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD9D96DA1CC50336008F279E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9D96E41CC50336008F279E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B8B2D959E77A65AC0CAB76B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlyImage/Pods-FlyImage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		682C7851251E962AD95E8BD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD9D96D71CC50336008F279E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDDAE6B31CE6E10C00B3CCCC /* FlyImageIconRenderer.m in Sources */,
+				DD9D971C1CC5034A008F279E /* FlyImageDecoder.m in Sources */,
+				DD9D97241CC5034A008F279E /* FlyImageUtils.m in Sources */,
+				DD9D97151CC5034A008F279E /* FlyImageCache.m in Sources */,
+				DD9D971E1CC5034A008F279E /* FlyImageDownloader.m in Sources */,
+				DD9D97181CC5034A008F279E /* FlyImageDataFile.m in Sources */,
+				DDDAE6B71CE6E10C00B3CCCC /* UIImageView+FlyImageCache.m in Sources */,
+				DDDAE6B51CE6E10C00B3CCCC /* FlyImageRenderer.m in Sources */,
+				DD4D2C521D5C678E001F5D77 /* FlyImageRetrieveOperation.m in Sources */,
+				DDDAE6B11CE6E10C00B3CCCC /* CALayer+FlyImageIconCache.m in Sources */,
+				DD9D97201CC5034A008F279E /* FlyImageEncoder.m in Sources */,
+				DDDAE6B91CE6E10C00B3CCCC /* UIImageView+FlyImageIconCache.m in Sources */,
+				DD9D971A1CC5034A008F279E /* FlyImageDataFileManager.m in Sources */,
+				DD9D97221CC5034A008F279E /* FlyImageIconCache.m in Sources */,
+				DDDAE6AF1CE6E10C00B3CCCC /* CALayer+FlyImageCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9D96E21CC50336008F279E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9D97341CC503A2008F279E /* FlyImageCacheTests.m in Sources */,
+				DD9D97381CC503A2008F279E /* FlyImageIconCacheTests.m in Sources */,
+				DD9D97361CC503A2008F279E /* FlyImageDataFileTests.m in Sources */,
+				DD9D97351CC503A2008F279E /* FlyImageDataFileManagerTests.m in Sources */,
+				DD9D97371CC503A2008F279E /* FlyImageDownloadManagerTests.m in Sources */,
+				DD4D2C531D5C678E001F5D77 /* FlyImageRetrieveOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD9D96E91CC50336008F279E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD9D96DB1CC50336008F279E /* FlyImage */;
+			targetProxy = DD9D96E81CC50336008F279E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DD9D96EE1CC50336008F279E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DD9D96EF1CC50336008F279E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DD9D96F11CC50336008F279E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C05497892C966A58859B6B98 /* Pods-FlyImage.debug.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = FlyImage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FlyImage/Venders",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flyimage.imagecache;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DD9D96F21CC50336008F279E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2054736E2EDA981DF80AD030 /* Pods-FlyImage.release.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = FlyImage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FlyImage/Venders",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flyimage.imagecache;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DD9D96F41CC50336008F279E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FlyImageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flyimage.imagecache.FlyImageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DD9D96F51CC50336008F279E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FlyImageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flyimage.imagecache.FlyImageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD9D96D61CC50336008F279E /* Build configuration list for PBXProject "FlyImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9D96EE1CC50336008F279E /* Debug */,
+				DD9D96EF1CC50336008F279E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9D96F01CC50336008F279E /* Build configuration list for PBXNativeTarget "FlyImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9D96F11CC50336008F279E /* Debug */,
+				DD9D96F21CC50336008F279E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9D96F31CC50336008F279E /* Build configuration list for PBXNativeTarget "FlyImageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9D96F41CC50336008F279E /* Debug */,
+				DD9D96F51CC50336008F279E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD9D96D31CC50336008F279E /* Project object */;
+}

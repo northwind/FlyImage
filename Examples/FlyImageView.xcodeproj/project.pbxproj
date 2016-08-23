@@ -1,0 +1,945 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7539169AF2FD0C6CD1ED1213 /* libPods-FlyImageIconView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F9C3948F7DFDB6E2FE5F0B0 /* libPods-FlyImageIconView.a */; };
+		8E45DB317D60C68FC813142D /* libPods-FlyImageView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DCBFE3EE450E44921AFAF53 /* libPods-FlyImageView.a */; };
+		977F44737DA3E198C81BF6F4 /* libPods-SingleView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0280F6E421151FBFAE698C23 /* libPods-SingleView.a */; };
+		CEE17C7A1B5057E6682927EF /* libPods-WebP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC1098E069AA6CA893D0F2C /* libPods-WebP.a */; };
+		DD2EDB131D61E6C30085C9E3 /* ProgressImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8E088D1D5DD5BD00FEBC3A /* ProgressImageView.m */; };
+		DD8E088E1D5DD5BD00FEBC3A /* ProgressImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8E088D1D5DD5BD00FEBC3A /* ProgressImageView.m */; };
+		DD9D97481CC5044D008F279E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9D97471CC5044D008F279E /* main.m */; };
+		DD9D974B1CC5044D008F279E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9D974A1CC5044D008F279E /* AppDelegate.m */; };
+		DDBECFCD1CD8C0FA00EC9263 /* FlyImageIconViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBECFCC1CD8C0FA00EC9263 /* FlyImageIconViewTableViewCell.m */; };
+		DDBED17A1CD8C5D600EC9263 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBED1791CD8C5D600EC9263 /* main.m */; };
+		DDBED17D1CD8C5D600EC9263 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBED17C1CD8C5D600EC9263 /* AppDelegate.m */; };
+		DDBED19B1CD8C70C00EC9263 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1F1381CD0831F00EEC549 /* RootViewController.m */; };
+		DDBED19C1CD8C71100EC9263 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1F13C1CD0832400EEC549 /* BaseTableViewCell.m */; };
+		DDBED19D1CD8C71900EC9263 /* TriditionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1F1481CD0832400EEC549 /* TriditionTableViewCell.m */; };
+		DDBED19E1CD8C71B00EC9263 /* SDWebImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1F1461CD0832400EEC549 /* SDWebImageTableViewCell.m */; };
+		DDBED19F1CD8C72A00EC9263 /* FlyImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1F1441CD0832400EEC549 /* FlyImageTableViewCell.m */; };
+		DDBED1A01CD8C72E00EC9263 /* FlyImageLayerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1F1421CD0832400EEC549 /* FlyImageLayerTableViewCell.m */; };
+		DDBED1A11CD8C76700EC9263 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD1F1501CD083B300EEC549 /* Default-568h@2x.png */; };
+		DDD1F1391CD0831F00EEC549 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1F1381CD0831F00EEC549 /* RootViewController.m */; };
+		DDD1F1491CD0832400EEC549 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1F13C1CD0832400EEC549 /* BaseTableViewCell.m */; };
+		DDD1F14C1CD0832400EEC549 /* FlyImageLayerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1F1421CD0832400EEC549 /* FlyImageLayerTableViewCell.m */; };
+		DDD1F14D1CD0832400EEC549 /* FlyImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1F1441CD0832400EEC549 /* FlyImageTableViewCell.m */; };
+		DDD1F14E1CD0832400EEC549 /* SDWebImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1F1461CD0832400EEC549 /* SDWebImageTableViewCell.m */; };
+		DDD1F14F1CD0832400EEC549 /* TriditionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1F1481CD0832400EEC549 /* TriditionTableViewCell.m */; };
+		DDD1F1511CD083B300EEC549 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD1F1501CD083B300EEC549 /* Default-568h@2x.png */; };
+		DDD1F15A1CD084E500EEC549 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1F1591CD084E500EEC549 /* main.m */; };
+		DDD1F15D1CD084E500EEC549 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1F15C1CD084E500EEC549 /* AppDelegate.m */; };
+		DDD1F18F1CD0872D00EEC549 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1F13C1CD0832400EEC549 /* BaseTableViewCell.m */; };
+		DDD1F1911CD0872D00EEC549 /* SDWebImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1F1461CD0832400EEC549 /* SDWebImageTableViewCell.m */; };
+		DDD1F1931CD0872D00EEC549 /* TriditionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1F1481CD0832400EEC549 /* TriditionTableViewCell.m */; };
+		DDD1F1941CD08D1E00EEC549 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1F1381CD0831F00EEC549 /* RootViewController.m */; };
+		DDD1F1951CD08E7D00EEC549 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD1F1501CD083B300EEC549 /* Default-568h@2x.png */; };
+		DDD1F1A01CD0B92F00EEC549 /* FlyImageIconLayerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1F19F1CD0B92F00EEC549 /* FlyImageIconLayerTableViewCell.m */; };
+		DDD8FB601D59EB9200821392 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD8FB5F1D59EB9200821392 /* Launch Screen.storyboard */; };
+		DDD8FB611D59EB9200821392 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD8FB5F1D59EB9200821392 /* Launch Screen.storyboard */; };
+		DDD8FB621D59EB9200821392 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD8FB5F1D59EB9200821392 /* Launch Screen.storyboard */; };
+		DDD8FB631D59EB9200821392 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD8FB5F1D59EB9200821392 /* Launch Screen.storyboard */; };
+		DDDEF4321CE0AF4600C8366C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDEF4311CE0AF4600C8366C /* main.m */; };
+		DDDEF4351CE0AF4600C8366C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDEF4341CE0AF4600C8366C /* AppDelegate.m */; };
+		DDDEF4381CE0AF4600C8366C /* SingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDEF4371CE0AF4600C8366C /* SingleViewController.m */; };
+		DDDEF4451CE0B8AA00C8366C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD1F1501CD083B300EEC549 /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0280F6E421151FBFAE698C23 /* libPods-SingleView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SingleView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02F5D49EB862BEC96204662A /* Pods-FlyImageIconView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyImageIconView.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlyImageIconView/Pods-FlyImageIconView.release.xcconfig"; sourceTree = "<group>"; };
+		33A4E8609F3283491E3DD133 /* Pods-SingleView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingleView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SingleView/Pods-SingleView.release.xcconfig"; sourceTree = "<group>"; };
+		3ABB5A3F814E3BFC95A513BD /* Pods-FlyImageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyImageView.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlyImageView/Pods-FlyImageView.release.xcconfig"; sourceTree = "<group>"; };
+		4EC1098E069AA6CA893D0F2C /* libPods-WebP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F9C3948F7DFDB6E2FE5F0B0 /* libPods-FlyImageIconView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlyImageIconView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D3083C3FEEB3316F9CCCF92 /* Pods-FlyImageIconView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyImageIconView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlyImageIconView/Pods-FlyImageIconView.debug.xcconfig"; sourceTree = "<group>"; };
+		841CA4D45E6400A9646A0F66 /* Pods-FlyImageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyImageView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlyImageView/Pods-FlyImageView.debug.xcconfig"; sourceTree = "<group>"; };
+		9DCBFE3EE450E44921AFAF53 /* libPods-FlyImageView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlyImageView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D95E1058D32716446EB3DC84 /* Pods-WebP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebP/Pods-WebP.debug.xcconfig"; sourceTree = "<group>"; };
+		DD8E088C1D5DD5BD00FEBC3A /* ProgressImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressImageView.h; path = ../ProgressImageView.h; sourceTree = "<group>"; };
+		DD8E088D1D5DD5BD00FEBC3A /* ProgressImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProgressImageView.m; path = ../ProgressImageView.m; sourceTree = "<group>"; };
+		DD9D97431CC5044D008F279E /* FlyImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9D97471CC5044D008F279E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD9D97491CC5044D008F279E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DD9D974A1CC5044D008F279E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DD9D97571CC5044D008F279E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDBECFCB1CD8C0FA00EC9263 /* FlyImageIconViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyImageIconViewTableViewCell.h; sourceTree = "<group>"; };
+		DDBECFCC1CD8C0FA00EC9263 /* FlyImageIconViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageIconViewTableViewCell.m; sourceTree = "<group>"; };
+		DDBED1761CD8C5D600EC9263 /* WebP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDBED1791CD8C5D600EC9263 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDBED17B1CD8C5D600EC9263 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DDBED17C1CD8C5D600EC9263 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DDBED1891CD8C5D600EC9263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDD1F1371CD0831F00EEC549 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		DDD1F1381CD0831F00EEC549 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		DDD1F13B1CD0832400EEC549 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		DDD1F13C1CD0832400EEC549 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		DDD1F1411CD0832400EEC549 /* FlyImageLayerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyImageLayerTableViewCell.h; sourceTree = "<group>"; };
+		DDD1F1421CD0832400EEC549 /* FlyImageLayerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageLayerTableViewCell.m; sourceTree = "<group>"; };
+		DDD1F1431CD0832400EEC549 /* FlyImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyImageTableViewCell.h; sourceTree = "<group>"; };
+		DDD1F1441CD0832400EEC549 /* FlyImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageTableViewCell.m; sourceTree = "<group>"; };
+		DDD1F1451CD0832400EEC549 /* SDWebImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageTableViewCell.h; sourceTree = "<group>"; };
+		DDD1F1461CD0832400EEC549 /* SDWebImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageTableViewCell.m; sourceTree = "<group>"; };
+		DDD1F1471CD0832400EEC549 /* TriditionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriditionTableViewCell.h; sourceTree = "<group>"; };
+		DDD1F1481CD0832400EEC549 /* TriditionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriditionTableViewCell.m; sourceTree = "<group>"; };
+		DDD1F1501CD083B300EEC549 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		DDD1F1561CD084E500EEC549 /* FlyImageIconView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyImageIconView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD1F1591CD084E500EEC549 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDD1F15B1CD084E500EEC549 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DDD1F15C1CD084E500EEC549 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DDD1F1691CD084E500EEC549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDD1F19E1CD0B92F00EEC549 /* FlyImageIconLayerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyImageIconLayerTableViewCell.h; sourceTree = "<group>"; };
+		DDD1F19F1CD0B92F00EEC549 /* FlyImageIconLayerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageIconLayerTableViewCell.m; sourceTree = "<group>"; };
+		DDD8FB5F1D59EB9200821392 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		DDDEF42E1CE0AF4600C8366C /* SingleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingleView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDDEF4311CE0AF4600C8366C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDDEF4331CE0AF4600C8366C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DDDEF4341CE0AF4600C8366C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DDDEF4361CE0AF4600C8366C /* SingleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleViewController.h; sourceTree = "<group>"; };
+		DDDEF4371CE0AF4600C8366C /* SingleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleViewController.m; sourceTree = "<group>"; };
+		DDDEF4411CE0AF4600C8366C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8620E15B0D1F42DDE6C37AA /* Pods-WebP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebP.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebP/Pods-WebP.release.xcconfig"; sourceTree = "<group>"; };
+		FF39DAB46C23D364F5631D94 /* Pods-SingleView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingleView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SingleView/Pods-SingleView.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD9D97401CC5044D008F279E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E45DB317D60C68FC813142D /* libPods-FlyImageView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBED1731CD8C5D600EC9263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE17C7A1B5057E6682927EF /* libPods-WebP.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD1F1531CD084E500EEC549 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7539169AF2FD0C6CD1ED1213 /* libPods-FlyImageIconView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDDEF42B1CE0AF4600C8366C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				977F44737DA3E198C81BF6F4 /* libPods-SingleView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F7EFE6AE8450C9D550265DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D3083C3FEEB3316F9CCCF92 /* Pods-FlyImageIconView.debug.xcconfig */,
+				02F5D49EB862BEC96204662A /* Pods-FlyImageIconView.release.xcconfig */,
+				841CA4D45E6400A9646A0F66 /* Pods-FlyImageView.debug.xcconfig */,
+				3ABB5A3F814E3BFC95A513BD /* Pods-FlyImageView.release.xcconfig */,
+				FF39DAB46C23D364F5631D94 /* Pods-SingleView.debug.xcconfig */,
+				33A4E8609F3283491E3DD133 /* Pods-SingleView.release.xcconfig */,
+				D95E1058D32716446EB3DC84 /* Pods-WebP.debug.xcconfig */,
+				E8620E15B0D1F42DDE6C37AA /* Pods-WebP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		566B055403ECA67AB6D690C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F9C3948F7DFDB6E2FE5F0B0 /* libPods-FlyImageIconView.a */,
+				9DCBFE3EE450E44921AFAF53 /* libPods-FlyImageView.a */,
+				0280F6E421151FBFAE698C23 /* libPods-SingleView.a */,
+				4EC1098E069AA6CA893D0F2C /* libPods-WebP.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD9D973A1CC5044D008F279E = {
+			isa = PBXGroup;
+			children = (
+				DD9D97451CC5044D008F279E /* FlyImageView */,
+				DDD1F1571CD084E500EEC549 /* FlyImageIconView */,
+				DDBED1771CD8C5D600EC9263 /* WebP */,
+				DDDEF42F1CE0AF4600C8366C /* SingleView */,
+				DD9D97441CC5044D008F279E /* Products */,
+				3F7EFE6AE8450C9D550265DA /* Pods */,
+				566B055403ECA67AB6D690C2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD9D97441CC5044D008F279E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD9D97431CC5044D008F279E /* FlyImageView.app */,
+				DDD1F1561CD084E500EEC549 /* FlyImageIconView.app */,
+				DDBED1761CD8C5D600EC9263 /* WebP.app */,
+				DDDEF42E1CE0AF4600C8366C /* SingleView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD9D97451CC5044D008F279E /* FlyImageView */ = {
+			isa = PBXGroup;
+			children = (
+				DDD1F13A1CD0832400EEC549 /* Cells */,
+				DD9D97491CC5044D008F279E /* AppDelegate.h */,
+				DD9D974A1CC5044D008F279E /* AppDelegate.m */,
+				DDD1F1371CD0831F00EEC549 /* RootViewController.h */,
+				DDD1F1381CD0831F00EEC549 /* RootViewController.m */,
+				DD9D97571CC5044D008F279E /* Info.plist */,
+				DD9D97461CC5044D008F279E /* Supporting Files */,
+				DDD8FB5F1D59EB9200821392 /* Launch Screen.storyboard */,
+			);
+			path = FlyImageView;
+			sourceTree = "<group>";
+		};
+		DD9D97461CC5044D008F279E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDD1F1501CD083B300EEC549 /* Default-568h@2x.png */,
+				DD9D97471CC5044D008F279E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDBED1771CD8C5D600EC9263 /* WebP */ = {
+			isa = PBXGroup;
+			children = (
+				DDBED17B1CD8C5D600EC9263 /* AppDelegate.h */,
+				DDBED17C1CD8C5D600EC9263 /* AppDelegate.m */,
+				DDBED1891CD8C5D600EC9263 /* Info.plist */,
+				DDBED1781CD8C5D600EC9263 /* Supporting Files */,
+			);
+			path = WebP;
+			sourceTree = "<group>";
+		};
+		DDBED1781CD8C5D600EC9263 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDBED1791CD8C5D600EC9263 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDD1F13A1CD0832400EEC549 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DDD1F13B1CD0832400EEC549 /* BaseTableViewCell.h */,
+				DDD1F13C1CD0832400EEC549 /* BaseTableViewCell.m */,
+				DDD1F1411CD0832400EEC549 /* FlyImageLayerTableViewCell.h */,
+				DDD1F1421CD0832400EEC549 /* FlyImageLayerTableViewCell.m */,
+				DDD1F1431CD0832400EEC549 /* FlyImageTableViewCell.h */,
+				DDD1F1441CD0832400EEC549 /* FlyImageTableViewCell.m */,
+				DDD1F1451CD0832400EEC549 /* SDWebImageTableViewCell.h */,
+				DDD1F1461CD0832400EEC549 /* SDWebImageTableViewCell.m */,
+				DDD1F1471CD0832400EEC549 /* TriditionTableViewCell.h */,
+				DDD1F1481CD0832400EEC549 /* TriditionTableViewCell.m */,
+				DDD1F19E1CD0B92F00EEC549 /* FlyImageIconLayerTableViewCell.h */,
+				DDD1F19F1CD0B92F00EEC549 /* FlyImageIconLayerTableViewCell.m */,
+				DDBECFCB1CD8C0FA00EC9263 /* FlyImageIconViewTableViewCell.h */,
+				DDBECFCC1CD8C0FA00EC9263 /* FlyImageIconViewTableViewCell.m */,
+				DD8E088C1D5DD5BD00FEBC3A /* ProgressImageView.h */,
+				DD8E088D1D5DD5BD00FEBC3A /* ProgressImageView.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DDD1F1571CD084E500EEC549 /* FlyImageIconView */ = {
+			isa = PBXGroup;
+			children = (
+				DDD1F15B1CD084E500EEC549 /* AppDelegate.h */,
+				DDD1F15C1CD084E500EEC549 /* AppDelegate.m */,
+				DDD1F1691CD084E500EEC549 /* Info.plist */,
+				DDD1F1581CD084E500EEC549 /* Supporting Files */,
+			);
+			path = FlyImageIconView;
+			sourceTree = "<group>";
+		};
+		DDD1F1581CD084E500EEC549 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDD1F1591CD084E500EEC549 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDDEF42F1CE0AF4600C8366C /* SingleView */ = {
+			isa = PBXGroup;
+			children = (
+				DDDEF4331CE0AF4600C8366C /* AppDelegate.h */,
+				DDDEF4341CE0AF4600C8366C /* AppDelegate.m */,
+				DDDEF4361CE0AF4600C8366C /* SingleViewController.h */,
+				DDDEF4371CE0AF4600C8366C /* SingleViewController.m */,
+				DDDEF4411CE0AF4600C8366C /* Info.plist */,
+				DDDEF4301CE0AF4600C8366C /* Supporting Files */,
+			);
+			path = SingleView;
+			sourceTree = "<group>";
+		};
+		DDDEF4301CE0AF4600C8366C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDDEF4311CE0AF4600C8366C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD9D97421CC5044D008F279E /* FlyImageView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9D97651CC5044D008F279E /* Build configuration list for PBXNativeTarget "FlyImageView" */;
+			buildPhases = (
+				7BB62688892610CDF5BF155B /* [CP] Check Pods Manifest.lock */,
+				DD9D973F1CC5044D008F279E /* Sources */,
+				DD9D97401CC5044D008F279E /* Frameworks */,
+				DD9D97411CC5044D008F279E /* Resources */,
+				AF73610CB4A4FC61F7066FFF /* [CP] Embed Pods Frameworks */,
+				FC8AB57C3D212803BBD51308 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlyImageView;
+			productName = FlyImageView;
+			productReference = DD9D97431CC5044D008F279E /* FlyImageView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDBED1751CD8C5D600EC9263 /* WebP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDBED1991CD8C5D600EC9263 /* Build configuration list for PBXNativeTarget "WebP" */;
+			buildPhases = (
+				F81A2E353A1692446C6C00E7 /* [CP] Check Pods Manifest.lock */,
+				DDBED1721CD8C5D600EC9263 /* Sources */,
+				DDBED1731CD8C5D600EC9263 /* Frameworks */,
+				DDBED1741CD8C5D600EC9263 /* Resources */,
+				E33D266BAC01DC9109F97E25 /* [CP] Embed Pods Frameworks */,
+				EC7C9F769F09EA99C51E707D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebP;
+			productName = WebP;
+			productReference = DDBED1761CD8C5D600EC9263 /* WebP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDD1F1551CD084E500EEC549 /* FlyImageIconView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDD1F1751CD084E500EEC549 /* Build configuration list for PBXNativeTarget "FlyImageIconView" */;
+			buildPhases = (
+				1DE98FA8A78C1C6538E9434F /* [CP] Check Pods Manifest.lock */,
+				DDD1F1521CD084E500EEC549 /* Sources */,
+				DDD1F1531CD084E500EEC549 /* Frameworks */,
+				DDD1F1541CD084E500EEC549 /* Resources */,
+				EC7C322CCF25D58E17ADE873 /* [CP] Embed Pods Frameworks */,
+				3D1664DB16FAAE5424CC6B29 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlyImageIconView;
+			productName = FlyImageIconView;
+			productReference = DDD1F1561CD084E500EEC549 /* FlyImageIconView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDDEF42D1CE0AF4600C8366C /* SingleView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDDEF4441CE0AF4600C8366C /* Build configuration list for PBXNativeTarget "SingleView" */;
+			buildPhases = (
+				0A926CE0EFE2DD6A4B6420AC /* [CP] Check Pods Manifest.lock */,
+				DDDEF42A1CE0AF4600C8366C /* Sources */,
+				DDDEF42B1CE0AF4600C8366C /* Frameworks */,
+				DDDEF42C1CE0AF4600C8366C /* Resources */,
+				AA1CE48E20A4B22B24FDCBE0 /* [CP] Embed Pods Frameworks */,
+				1FE7AD92C126F35569E2DA7F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SingleView;
+			productName = SingleView;
+			productReference = DDDEF42E1CE0AF4600C8366C /* SingleView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD9D973B1CC5044D008F279E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Augmn;
+				TargetAttributes = {
+					DD9D97421CC5044D008F279E = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					DDBED1751CD8C5D600EC9263 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					DDD1F1551CD084E500EEC549 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					DDDEF42D1CE0AF4600C8366C = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = DD9D973E1CC5044D008F279E /* Build configuration list for PBXProject "FlyImageView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD9D973A1CC5044D008F279E;
+			productRefGroup = DD9D97441CC5044D008F279E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD9D97421CC5044D008F279E /* FlyImageView */,
+				DDD1F1551CD084E500EEC549 /* FlyImageIconView */,
+				DDBED1751CD8C5D600EC9263 /* WebP */,
+				DDDEF42D1CE0AF4600C8366C /* SingleView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD9D97411CC5044D008F279E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD8FB601D59EB9200821392 /* Launch Screen.storyboard in Resources */,
+				DDD1F1511CD083B300EEC549 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBED1741CD8C5D600EC9263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD8FB621D59EB9200821392 /* Launch Screen.storyboard in Resources */,
+				DDBED1A11CD8C76700EC9263 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD1F1541CD084E500EEC549 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD8FB611D59EB9200821392 /* Launch Screen.storyboard in Resources */,
+				DDD1F1951CD08E7D00EEC549 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDDEF42C1CE0AF4600C8366C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD8FB631D59EB9200821392 /* Launch Screen.storyboard in Resources */,
+				DDDEF4451CE0B8AA00C8366C /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A926CE0EFE2DD6A4B6420AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1DE98FA8A78C1C6538E9434F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1FE7AD92C126F35569E2DA7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SingleView/Pods-SingleView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D1664DB16FAAE5424CC6B29 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlyImageIconView/Pods-FlyImageIconView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BB62688892610CDF5BF155B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AA1CE48E20A4B22B24FDCBE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SingleView/Pods-SingleView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF73610CB4A4FC61F7066FFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlyImageView/Pods-FlyImageView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E33D266BAC01DC9109F97E25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebP/Pods-WebP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC7C322CCF25D58E17ADE873 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlyImageIconView/Pods-FlyImageIconView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC7C9F769F09EA99C51E707D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebP/Pods-WebP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F81A2E353A1692446C6C00E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FC8AB57C3D212803BBD51308 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlyImageView/Pods-FlyImageView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD9D973F1CC5044D008F279E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD1F1491CD0832400EEC549 /* BaseTableViewCell.m in Sources */,
+				DD8E088E1D5DD5BD00FEBC3A /* ProgressImageView.m in Sources */,
+				DDD1F14E1CD0832400EEC549 /* SDWebImageTableViewCell.m in Sources */,
+				DD9D974B1CC5044D008F279E /* AppDelegate.m in Sources */,
+				DDD1F14F1CD0832400EEC549 /* TriditionTableViewCell.m in Sources */,
+				DDD1F14D1CD0832400EEC549 /* FlyImageTableViewCell.m in Sources */,
+				DDD1F14C1CD0832400EEC549 /* FlyImageLayerTableViewCell.m in Sources */,
+				DD9D97481CC5044D008F279E /* main.m in Sources */,
+				DDD1F1391CD0831F00EEC549 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBED1721CD8C5D600EC9263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2EDB131D61E6C30085C9E3 /* ProgressImageView.m in Sources */,
+				DDBED17D1CD8C5D600EC9263 /* AppDelegate.m in Sources */,
+				DDBED19B1CD8C70C00EC9263 /* RootViewController.m in Sources */,
+				DDBED19D1CD8C71900EC9263 /* TriditionTableViewCell.m in Sources */,
+				DDBED19F1CD8C72A00EC9263 /* FlyImageTableViewCell.m in Sources */,
+				DDBED19E1CD8C71B00EC9263 /* SDWebImageTableViewCell.m in Sources */,
+				DDBED19C1CD8C71100EC9263 /* BaseTableViewCell.m in Sources */,
+				DDBED1A01CD8C72E00EC9263 /* FlyImageLayerTableViewCell.m in Sources */,
+				DDBED17A1CD8C5D600EC9263 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD1F1521CD084E500EEC549 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD1F1941CD08D1E00EEC549 /* RootViewController.m in Sources */,
+				DDD1F18F1CD0872D00EEC549 /* BaseTableViewCell.m in Sources */,
+				DDD1F1A01CD0B92F00EEC549 /* FlyImageIconLayerTableViewCell.m in Sources */,
+				DDD1F1911CD0872D00EEC549 /* SDWebImageTableViewCell.m in Sources */,
+				DDD1F1931CD0872D00EEC549 /* TriditionTableViewCell.m in Sources */,
+				DDD1F15D1CD084E500EEC549 /* AppDelegate.m in Sources */,
+				DDD1F15A1CD084E500EEC549 /* main.m in Sources */,
+				DDBECFCD1CD8C0FA00EC9263 /* FlyImageIconViewTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDDEF42A1CE0AF4600C8366C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDDEF4381CE0AF4600C8366C /* SingleViewController.m in Sources */,
+				DDDEF4351CE0AF4600C8366C /* AppDelegate.m in Sources */,
+				DDDEF4321CE0AF4600C8366C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DD9D97631CC5044D008F279E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD9D97641CC5044D008F279E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD9D97661CC5044D008F279E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 841CA4D45E6400A9646A0F66 /* Pods-FlyImageView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = FlyImageView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmn.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DD9D97671CC5044D008F279E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ABB5A3F814E3BFC95A513BD /* Pods-FlyImageView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = FlyImageView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmn.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DDBED1951CD8C5D600EC9263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D95E1058D32716446EB3DC84 /* Pods-WebP.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = WebP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmn.flyimageview.WebP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DDBED1961CD8C5D600EC9263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8620E15B0D1F42DDE6C37AA /* Pods-WebP.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = WebP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmn.flyimageview.WebP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DDD1F1761CD084E500EEC549 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D3083C3FEEB3316F9CCCF92 /* Pods-FlyImageIconView.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = FlyImageIconView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmn.flyimageiconview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DDD1F1771CD084E500EEC549 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02F5D49EB862BEC96204662A /* Pods-FlyImageIconView.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = FlyImageIconView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmn.flyimageiconview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DDDEF4421CE0AF4600C8366C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF39DAB46C23D364F5631D94 /* Pods-SingleView.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = SingleView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmn.flyimageview.SingleView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DDDEF4431CE0AF4600C8366C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33A4E8609F3283491E3DD133 /* Pods-SingleView.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = SingleView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.augmn.flyimageview.SingleView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD9D973E1CC5044D008F279E /* Build configuration list for PBXProject "FlyImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9D97631CC5044D008F279E /* Debug */,
+				DD9D97641CC5044D008F279E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9D97651CC5044D008F279E /* Build configuration list for PBXNativeTarget "FlyImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9D97661CC5044D008F279E /* Debug */,
+				DD9D97671CC5044D008F279E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDBED1991CD8C5D600EC9263 /* Build configuration list for PBXNativeTarget "WebP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDBED1951CD8C5D600EC9263 /* Debug */,
+				DDBED1961CD8C5D600EC9263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDD1F1751CD084E500EEC549 /* Build configuration list for PBXNativeTarget "FlyImageIconView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD1F1761CD084E500EEC549 /* Debug */,
+				DDD1F1771CD084E500EEC549 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDDEF4441CE0AF4600C8366C /* Build configuration list for PBXNativeTarget "SingleView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDDEF4421CE0AF4600C8366C /* Debug */,
+				DDDEF4431CE0AF4600C8366C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD9D973B1CC5044D008F279E /* Project object */;
+}
