@@ -35,10 +35,7 @@ use_frameworks!
 pod 'FlyImage', '~>1.0'
 ```
 
-
-#### Support WebP
-
-If you want to support WebP, just change the Podfile:
+If you want to support `WebP`, just change the Podfile:
 
 ```
 platform :ios, '8.0'
@@ -49,7 +46,7 @@ pod 'FlyImage/WebP', '~>1.0'
 
 Using UIImageView and CALayer Category
 
-```
+```objective-c
 #import "FlyImage.h"
 ...
 
@@ -69,7 +66,7 @@ UIImageView *iconView = [[UIImageView alloc] initWithFrame:frame];
 
 Using FlyImageCache
 
-```
+```objective-c
 // retrieve a specific key, and get callback
 [[FlyImageCache sharedInstance] asyncGetImageWithKey:key
 	  									   completed:^(NSString *key, UIImage *image) {
@@ -86,7 +83,7 @@ Using FlyImageCache
 
 Using FlyImageIconCache
 
-```
+```objective-c
 // add a new icon with a specific key
 [[FlyImageIconCache sharedInstance] addImageWithKey:key
         size:drawSize
@@ -107,7 +104,7 @@ Using FlyImageIconCache
 
 ```
 
-More demos in folder [Examples](http://github)
+More demos in folder [Examples](https://github.com/northwind/FlyImage/tree/master/Examples)
 
 
 ## Performance Mesure
@@ -115,7 +112,7 @@ More demos in folder [Examples](http://github)
 
 #### Memory when scrolling images
 
-Demo Target: FlyImageView / Device: iPhone6 Plus
+> Demo Target: FlyImageView / Device: iPhone6 Plus
 
 Memory | FlyImage | SDWebImage | UIKit
 ------------ | ------------ | ------------- | ------------
@@ -126,7 +123,7 @@ All Anonymous VM | 17~30M | 310M  | 17~30M
 
 #### FPS when more than 150 small images in the same screen
 
-Demo Target: FlyImageIconView / Device: iPhone6 Plus
+> Demo Target: FlyImageIconView / Device: iPhone6 Plus
 
 FlyImage | SDWebImage | UIKit
 ------------ | ------------- | ------------

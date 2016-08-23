@@ -12,6 +12,7 @@ before_install:
     - pod --version
     - pod setup --silent
     - pod repo update --silent
+    - pod install
 
 script:
 
