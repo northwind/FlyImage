@@ -1,6 +1,6 @@
 ![FlyImage Logo](Docs/logo.png) FlyImage
 =========
-[![Build Status](https://travis-ci.org/northwind/FlyImage.svg?branch=feature%2Ftravis)](https://travis-ci.org/northwind/FlyImage)
+[![Build Status](https://travis-ci.org/northwind/FlyImage.svg?branch=master)](https://travis-ci.org/northwind/FlyImage)
 [![Pod Version](http://img.shields.io/cocoapods/v/FlyImage.svg?style=flat)](http://cocoadocs.org/docsets/FlyImage/)
 [![Pod Platform](http://img.shields.io/cocoapods/p/FlyImage.svg?style=flat)](http://cocoadocs.org/docsets/FlyImage/)
 [![Pod License](http://img.shields.io/cocoapods/l/FlyImage.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0.html)
