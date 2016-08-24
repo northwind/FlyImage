@@ -81,7 +81,7 @@ static FlyImageIconCache *_iconCache;
                        }];
     }
     
-    [self waitForExpectationsWithTimeout:10 handler:^(NSError *error) { XCTAssert(YES, @"Pass"); }];
+    [self waitForExpectationsWithTimeout:30 handler:^(NSError *error) { XCTAssert(YES, @"Pass"); }];
 }
 
 - (void)test12AddSameImage {
@@ -121,7 +121,7 @@ static FlyImageIconCache *_iconCache;
                        }];
     }
     
-    [self waitForExpectationsWithTimeout:10 handler:^(NSError *error) { XCTAssert(YES, @"Pass"); }];
+    [self waitForExpectationsWithTimeout:30 handler:^(NSError *error) { XCTAssert(YES, @"Pass"); }];
 }
 
 - (void)test20ReplaceImage {
@@ -172,7 +172,7 @@ static FlyImageIconCache *_iconCache;
                        }];
     }
     
-    [self waitForExpectationsWithTimeout:10 handler:^(NSError *error) { XCTAssert(YES, @"Pass"); }];
+    [self waitForExpectationsWithTimeout:30 handler:^(NSError *error) { XCTAssert(YES, @"Pass"); }];
 }
 
 - (void)test70RemoveImage {
