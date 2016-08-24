@@ -94,9 +94,10 @@
 {
     __weak __typeof__(self) weakSelf = self;
 
-    NSURLRequest* requst = [NSURLRequest requestWithURL:_iconURL];
+	NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:_iconURL];
+	request.timeoutInterval = 30;	// Default 30 seconds
     _downloadHandlerId = [[FlyImageDownloader sharedInstance]
-        downloadImageForURLRequest:requst
+        downloadImageForURLRequest:request
         success:^(NSURLRequest* request, NSURL* filePath) {
 							  
 							  NSString *downloadedKey = request.URL.absoluteString;

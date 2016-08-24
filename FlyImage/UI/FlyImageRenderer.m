@@ -164,9 +164,10 @@
     __block NSURL* downloadingURL = _thumbnailURL;
     __block NSString* downloadingKey = downloadingURL.absoluteString;
 
-    NSURLRequest* requst = [NSURLRequest requestWithURL:downloadingURL];
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:downloadingURL];
+	request.timeoutInterval = 30;	// Default 30 seconds
     _downloadHandlerId = [[FlyImageDownloader sharedInstance]
-        downloadImageForURLRequest:requst
+        downloadImageForURLRequest:request
         progress:^(float progress) {
 							  if ( [_delegate respondsToSelector:@selector(flyImageRenderer:didDownloadImageURL:progress:)] ){
 								  [_delegate flyImageRenderer:weakSelf didDownloadImageURL:downloadingURL progress:progress];
@@ -202,9 +203,10 @@
     __block NSURL* downloadingURL = _originalURL;
     __block NSString* downloadingKey = downloadingURL.absoluteString;
 
-    NSURLRequest* requst = [NSURLRequest requestWithURL:downloadingURL];
+	NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:downloadingURL];
+	request.timeoutInterval = 30;	// Default 30 seconds
     _downloadHandlerId = [[FlyImageDownloader sharedInstance]
-        downloadImageForURLRequest:requst
+        downloadImageForURLRequest:request
         progress:^(float progress) {
 							  if ( [_delegate respondsToSelector:@selector(flyImageRenderer:didDownloadImageURL:progress:)] ){
 								  [_delegate flyImageRenderer:weakSelf didDownloadImageURL:downloadingURL progress:progress];

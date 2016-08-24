@@ -18,6 +18,7 @@ static FlyImageCache *_imageCache;
 static CGFloat imageWidth = 1920.0;
 static CGFloat imageHeight = 1200.0;
 static FlyImageDataFileManager *_fileManager;
+static int kMultipleTimes = 15;
 
 @implementation FlyImageCacheTests
 
@@ -89,7 +90,7 @@ static FlyImageDataFileManager *_fileManager;
     [self addImageFile:filename];
     
     __block int sum = 0;
-    for (int i=0; i<100; i++) {
+    for (int i=0; i<kMultipleTimes; i++) {
         
         [_imageCache addImageWithKey:filename
                             filename:filename
@@ -98,20 +99,20 @@ static FlyImageDataFileManager *_fileManager;
                                XCTAssert( image.size.height == imageHeight );
                                
                                sum++;
-                               if ( sum == 100 ){
+                               if ( sum == kMultipleTimes ){
                                    [expectation fulfill];
                                }
                             }];
     }
     
-    [self waitForExpectationsWithTimeout:10 handler:^(NSError *error) { XCTAssert(YES, @"Pass"); }];
+    [self waitForExpectationsWithTimeout:30 handler:^(NSError *error) { XCTAssert(YES, @"Pass"); }];
 }
 
 - (void)test13AddMultipleKeys {
     XCTestExpectation *expectation = [self expectationWithDescription:@"test13AddMultipleKeys"];
     
     __block int sum = 0;
-    for (int i=1; i<=100; i++) {
+    for (int i=1; i<=kMultipleTimes; i++) {
         
         NSString *filename = [NSString stringWithFormat:@"%d", i];
         [self addImageFile:filename];
@@ -123,7 +124,7 @@ static FlyImageDataFileManager *_fileManager;
                                XCTAssert( image.size.height == imageHeight );
                                
                                sum++;
-                               if ( sum == 100 ){
+                               if ( sum == kMultipleTimes ){
                                    [expectation fulfill];
                                }
                             } ];
@@ -152,7 +153,7 @@ static FlyImageDataFileManager *_fileManager;
     NSString *filename = @"10";
     
     __block int sum = 0;
-    for (int i=0; i<100; i++) {
+    for (int i=0; i<kMultipleTimes; i++) {
         [_imageCache asyncGetImageWithKey:filename
                                  drawSize:CGSizeMake(500, 800)
                           contentsGravity:kCAGravityResizeAspect
@@ -162,13 +163,13 @@ static FlyImageDataFileManager *_fileManager;
                                XCTAssert( image.size.height == 800 );
                                
                                sum++;
-                               if ( sum == 100 ){
+                               if ( sum == kMultipleTimes ){
                                    [expectation fulfill];
                                }
                            }];
     }
     
-    [self waitForExpectationsWithTimeout:10 handler:^(NSError *error) { XCTAssert(YES, @"Pass"); }];
+    [self waitForExpectationsWithTimeout:30 handler:^(NSError *error) { XCTAssert(YES, @"Pass"); }];
 }
 
 - (void)test50RemoveImage {

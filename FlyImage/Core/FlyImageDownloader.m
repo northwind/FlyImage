@@ -345,7 +345,7 @@
                 matchedHandler.failedBlock(nil, error);
             }
         });
-        
+		
         // remove this task from both merged and queued tasks
         if (matchedTask.handlers.count == 0) {
 			

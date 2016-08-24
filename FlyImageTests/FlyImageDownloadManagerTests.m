@@ -14,6 +14,7 @@
 @end
 
 static const NSString *kAssetHost = @"https://flyimage.oss-us-west-1.aliyuncs.com/";
+static int kMultipleTimes = 15;
 
 @implementation DownloadManagerClient
 - (void)FlyImageDownloader:(FlyImageDownloader *)manager
@@ -26,7 +27,6 @@ static const NSString *kAssetHost = @"https://flyimage.oss-us-west-1.aliyuncs.co
 					   filePath:(NSURL *)filePath
 						  error:(NSError *)error
 						request:(NSURLRequest *)request {
-	NSAssert(response != nil, nil);
 	NSAssert(request != nil, nil);
 	
 	[self.expectation fulfill];
@@ -69,7 +69,8 @@ static FlyImageDownloader *_downloadManager;
 	NSString *imagePath = [kAssetHost stringByAppendingPathComponent:@"10.jpg"];
 	
     NSURL *url = [NSURL URLWithString:imagePath];
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+	request.timeoutInterval = 30;
     [_downloadManager downloadImageForURLRequest:request progress:^(float percentage) {
         XCTAssert( percentage >= 0 && percentage <= 1 );
     } success:^(NSURLRequest *request, NSURL *filePath) {
@@ -92,9 +93,10 @@ static FlyImageDownloader *_downloadManager;
 - (void)test30Failed {
     XCTestExpectation *expectation = [self expectationWithDescription:@"test30Failed"];
 	NSString *imagePath = [kAssetHost stringByAppendingPathComponent:@"xxx"];
-    
-    NSURL *url = [NSURL URLWithString:imagePath];
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+	
+	NSURL *url = [NSURL URLWithString:imagePath];
+	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+	request.timeoutInterval = 30;
     [_downloadManager downloadImageForURLRequest:request progress:nil success:^(NSURLRequest *request, NSURL *filePath) {
         XCTAssert( NO );
         
@@ -109,21 +111,22 @@ static FlyImageDownloader *_downloadManager;
     [self waitForExpectationsWithTimeout:60 handler:^(NSError *error) { XCTAssert(YES, @"Pass"); }];
 }
 
-- (void)test31FailedMultile {
-    XCTestExpectation *expectation = [self expectationWithDescription:@"test31FailedMultile"];
+- (void)test31FailedMultiple {
+    XCTestExpectation *expectation = [self expectationWithDescription:@"test31FailedMultiple"];
     NSString *imagePath = [kAssetHost stringByAppendingPathComponent:@"xxx"];
 	
     __block int sum = 0;
-    for (int i=0; i<100; i++) {
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@-%d", imagePath, i] ];
-        NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+    for (int i=0; i<kMultipleTimes; i++) {
+        NSURL *url = [NSURL URLWithString:imagePath];
+		NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+		request.timeoutInterval = 5;
         [_downloadManager downloadImageForURLRequest:request progress:nil success:^(NSURLRequest *request, NSURL *filePath) {
             XCTAssert( NO );
         } failed:^(NSURLRequest *request, NSError *error) {
             XCTAssert( error != nil );
             
             sum++;
-            if ( sum == 100 ){
+            if ( sum == kMultipleTimes ){
                 [expectation fulfill];
             }
         }];
@@ -156,7 +159,7 @@ static FlyImageDownloader *_downloadManager;
 
 - (void)test51CancelHandler {
     
-    XCTestExpectation *expectation = [self expectationWithDescription:@"test91CancelTwice"];
+    XCTestExpectation *expectation = [self expectationWithDescription:@"test91CancelMultipleTimes"];
 	NSString *imagePath = [kAssetHost stringByAppendingPathComponent:@"12.jpg"];
 	
     NSURL *url = [NSURL URLWithString:imagePath];
@@ -165,21 +168,18 @@ static FlyImageDownloader *_downloadManager;
                                                                                progress:nil
                                                                                 success:^(NSURLRequest *request, NSURL *filePath) {
                                                                                     XCTAssert( NO );
+																					[expectation fulfill];
                                                                                 } failed:^(NSURLRequest *request, NSError *error) {
-                                                                                    XCTAssert( YES );
+																					XCTAssert( error != nil );
+																					[expectation fulfill];
                                                                                 }];
     
-    __block int sum = 0;
-    for (int i=0; i<100; i++) {
+    for (int i=0; i<kMultipleTimes; i++) {
         [_downloadManager downloadImageForURLRequest:request
                                             progress:nil
                                              success:^(NSURLRequest *request, NSURL *filePath) {
-                                                 XCTAssert( YES );
-                                                 
-                                                 sum++;
-                                                 if ( sum == 100 ){
-                                                     [expectation fulfill];
-                                                 }
+												 XCTAssert( NO );
+												 [expectation fulfill];
                                              } failed:^(NSURLRequest *request, NSError *error) {
                                                  XCTAssert( NO );
                                                  [expectation fulfill];
