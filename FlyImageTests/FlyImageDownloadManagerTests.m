@@ -13,6 +13,8 @@
 @property (nonatomic, strong) XCTestExpectation *expectation;
 @end
 
+static const NSString *kAssetHost = @"https://flyimage.oss-us-west-1.aliyuncs.com/";
+
 @implementation DownloadManagerClient
 - (void)FlyImageDownloader:(FlyImageDownloader *)manager
 				willSendRequest:(NSURLRequest *)request {
@@ -64,8 +66,8 @@ static FlyImageDownloader *_downloadManager;
 
 - (void)test10Success {
     XCTestExpectation *expectation = [self expectationWithDescription:@"test10AddImage"];
-    NSString *imagePath = @"http://liuliantv.oss-cn-beijing.aliyuncs.com/flyimage/10.jpg";
-    
+	NSString *imagePath = [kAssetHost stringByAppendingPathComponent:@"10.jpg"];
+	
     NSURL *url = [NSURL URLWithString:imagePath];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
     [_downloadManager downloadImageForURLRequest:request progress:^(float percentage) {
@@ -89,7 +91,7 @@ static FlyImageDownloader *_downloadManager;
 
 - (void)test30Failed {
     XCTestExpectation *expectation = [self expectationWithDescription:@"test30Failed"];
-    NSString *imagePath = @"http://liuliantv.oss-cn-beijing.aliyuncs.com/flyimage/xxx";
+	NSString *imagePath = [kAssetHost stringByAppendingPathComponent:@"xxx"];
     
     NSURL *url = [NSURL URLWithString:imagePath];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
@@ -109,7 +111,7 @@ static FlyImageDownloader *_downloadManager;
 
 - (void)test31FailedMultile {
     XCTestExpectation *expectation = [self expectationWithDescription:@"test31FailedMultile"];
-    NSString *imagePath = @"http://liuliantv.oss-cn-beijing.aliyuncs.com/flyimage/xxx";
+    NSString *imagePath = [kAssetHost stringByAppendingPathComponent:@"xxx"];
 	
     __block int sum = 0;
     for (int i=0; i<100; i++) {
@@ -133,8 +135,8 @@ static FlyImageDownloader *_downloadManager;
 - (void)test50CancelTask {
 	
     XCTestExpectation *expectation = [self expectationWithDescription:@"test90Cancel"];
-    NSString *imagePath = @"http://liuliantv.oss-cn-beijing.aliyuncs.com/flyimage/11.jpg";
-    
+	NSString *imagePath = [kAssetHost stringByAppendingPathComponent:@"11.jpg"];
+	
     NSURL *url = [NSURL URLWithString:imagePath];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
     FlyImageDownloadHandlerId *handlerId = [_downloadManager downloadImageForURLRequest:request
@@ -155,8 +157,8 @@ static FlyImageDownloader *_downloadManager;
 - (void)test51CancelHandler {
     
     XCTestExpectation *expectation = [self expectationWithDescription:@"test91CancelTwice"];
-    NSString *imagePath = @"http://liuliantv.oss-cn-beijing.aliyuncs.com/flyimage/12.jpg";
-    
+	NSString *imagePath = [kAssetHost stringByAppendingPathComponent:@"12.jpg"];
+	
     NSURL *url = [NSURL URLWithString:imagePath];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
     FlyImageDownloadHandlerId *handlerId = [_downloadManager downloadImageForURLRequest:request
@@ -196,7 +198,7 @@ static FlyImageDownloader *_downloadManager;
 	client.expectation = expectation;
 	_downloadManager.delegate = client;
 	
-	NSString *imagePath = @"http://liuliantv.oss-cn-beijing.aliyuncs.com/flyimage/13.jpg";
+	NSString *imagePath = [kAssetHost stringByAppendingPathComponent:@"13.jpg"];
 	NSURL *url = [NSURL URLWithString:imagePath];
 	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
 	[_downloadManager downloadImageForURLRequest:request];
@@ -211,7 +213,7 @@ static FlyImageDownloader *_downloadManager;
 	client.expectation = expectation;
 	_downloadManager.delegate = client;
 	
-	NSString *imagePath = @"http://liuliantv.oss-cn-beijing.aliyuncs.com/flyimage/14.jpg";
+	NSString *imagePath = [kAssetHost stringByAppendingPathComponent:@"14.jpg"];
 	NSURL *url = [NSURL URLWithString:imagePath];
 	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
 	FlyImageDownloadHandlerId *handlerId = [_downloadManager downloadImageForURLRequest:request];
