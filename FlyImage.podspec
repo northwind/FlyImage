@@ -1,14 +1,14 @@
 Pod::Spec.new do |s|
   s.name         = "FlyImage"
-  s.version      = "0.5"
-  s.summary      = "A simple way to download and render Image on iOS."
-  s.description  = "A simple way to download and render Image on iOS."
-  s.homepage     = "http://github.com/augmn/FlyImage"
+  s.version      = "0.9"
+  s.summary      = "Download, cache, render small images with UIImageView category"
+  s.description  = "FlyImage takes the advantages of SDWebImage, FastImageCache and AFNetworking, is a simple and high performance image library."
+  s.homepage     = "https://github.com/northwind/FlyImage"
   s.license      = "MIT"
   s.author             = { "norristong" => "norristong_x@qq.com" }
 
   s.platform     = :ios, "8.0"
-  s.source = { :git => 'https://github.com/augmn/FlyImage.git', :tag => s.version.to_s }
+  s.source = { :git => 'https://github.com/northwind/FlyImage.git' }
   s.source_files  = "FlyImage", "FlyImage/**/*.{h,m}"
 
   s.frameworks = "ImageIO", 'UIKit'
