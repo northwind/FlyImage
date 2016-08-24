@@ -94,8 +94,8 @@
 {
     __weak __typeof__(self) weakSelf = self;
 
-	NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:_iconURL];
-	request.timeoutInterval = 30;	// Default 30 seconds
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:_iconURL];
+    request.timeoutInterval = 30; // Default 30 seconds
     _downloadHandlerId = [[FlyImageDownloader sharedInstance]
         downloadImageForURLRequest:request
         success:^(NSURLRequest* request, NSURL* filePath) {

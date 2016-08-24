@@ -165,7 +165,7 @@
     __block NSString* downloadingKey = downloadingURL.absoluteString;
 
     NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:downloadingURL];
-	request.timeoutInterval = 30;	// Default 30 seconds
+    request.timeoutInterval = 30; // Default 30 seconds
     _downloadHandlerId = [[FlyImageDownloader sharedInstance]
         downloadImageForURLRequest:request
         progress:^(float progress) {
@@ -203,8 +203,8 @@
     __block NSURL* downloadingURL = _originalURL;
     __block NSString* downloadingKey = downloadingURL.absoluteString;
 
-	NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:downloadingURL];
-	request.timeoutInterval = 30;	// Default 30 seconds
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:downloadingURL];
+    request.timeoutInterval = 30; // Default 30 seconds
     _downloadHandlerId = [[FlyImageDownloader sharedInstance]
         downloadImageForURLRequest:request
         progress:^(float progress) {
