@@ -121,7 +121,7 @@ All Anonymous VM | 17~30M | 310M  | 17~30M
 
 
 
-#### FPS when more than 150 small images in the same screen
+#### FPS when more than 170 small images in the same screen
 
 > Demo Target: FlyImageIconView / Device: iPhone6 Plus
 
