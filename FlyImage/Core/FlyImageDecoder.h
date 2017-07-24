@@ -46,7 +46,7 @@
           contentsGravity:(NSString* const)contentsGravity
              cornerRadius:(CGFloat)cornerRadius;
 
-#ifdef FlyImage_WebP
+#ifdef FLYIMAGE_WEBP
 - (UIImage*)imageWithWebPData:(NSData*)imageData hasAlpha:(BOOL*)hasAlpha;
 #endif
 
