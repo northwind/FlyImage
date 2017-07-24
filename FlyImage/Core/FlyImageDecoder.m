@@ -8,7 +8,7 @@
 
 #import "FlyImageDecoder.h"
 #ifdef FLYIMAGE_WEBP
-#import "libwebp/webp/decode.h"
+#import "webp/decode.h"
 #endif
 
 static void __ReleaseAsset(void* info, const void* data, size_t size)
