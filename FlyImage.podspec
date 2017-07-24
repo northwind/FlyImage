@@ -30,10 +30,14 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'WebP' do |webp|
-    webp.xcconfig = { 
+    webp.xcconfig = {
       'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) FLYIMAGE_WEBP=1',
       'USER_HEADER_SEARCH_PATHS' => '$(inherited) $(SRCROOT)/libwebp/src'
-    }    
+    }
+    webp.watchos.xcconfig = {
+      'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) FLYIMAGE_WEBP=1',
+      'USER_HEADER_SEARCH_PATHS' => '$(inherited) $(SRCROOT)/libwebp/src'
+    }
     webp.dependency 'FlyImage/Core'
     webp.dependency 'libwebp'
   end

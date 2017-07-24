@@ -7,7 +7,7 @@
 //
 
 #import "FlyImageDecoder.h"
-#ifdef FlyImage_WebP
+#ifdef FLYIMAGE_WEBP
 #import "libwebp/webp/decode.h"
 #endif
 
@@ -18,7 +18,7 @@ static void __ReleaseAsset(void* info, const void* data, size_t size)
     }
 }
 
-#ifdef FlyImage_WebP
+#ifdef FLYIMAGE_WEBP
 // This gets called when the UIImage gets collected and frees the underlying image.
 static void free_image_data(void* info, const void* data, size_t size)
 {
@@ -104,7 +104,7 @@ static void free_image_data(void* info, const void* data, size_t size)
         imageRef = CGImageCreateWithPNGDataProvider(dataProvider, NULL, YES, kCGRenderingIntentDefault);
 
     } else if (contentType == ImageContentTypeWebP) {
-#ifdef FlyImage_WebP
+#ifdef FLYIMAGE_WEBP
         // `WebPGetInfo` weill return image width and height
         int width = 0, height = 0;
         if (!WebPGetInfo(bytes, length, &width, &height)) {
@@ -239,7 +239,7 @@ static void free_image_data(void* info, const void* data, size_t size)
     return decompressedImage;
 }
 
-#ifdef FlyImage_WebP
+#ifdef FLYIMAGE_WEBP
 - (UIImage*)imageWithWebPData:(NSData*)imageData hasAlpha:(BOOL*)hasAlpha
 {
 

@@ -52,7 +52,7 @@
         _retrievingQueue.qualityOfService = NSQualityOfServiceUserInteractive;
         _retrievingQueue.maxConcurrentOperationCount = 6;
 
-#ifdef FlyImage_WebP
+#ifdef FLYIMAGE_WEBP
         _autoConvertWebP = NO;
         _compressionQualityForWebP = 0.8;
 #endif
@@ -223,7 +223,7 @@
 			contentType = [FlyImageUtils contentTypeForImageData:fileData];
 			UIImage *image = nil;
 			if ( contentType == ImageContentTypeWebP ) {
-#ifdef FlyImage_WebP
+#ifdef FLYIMAGE_WEBP
 				if ( _autoConvertWebP ) {
 					// Decode WebP
 					BOOL hasAlpha;

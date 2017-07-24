@@ -19,7 +19,7 @@
 @property (nonatomic, assign) BOOL autoDismissImage; // If you want to reduce memory when the app enter background, set this flag as YES. Default is NO.
 @property (nonatomic, strong) FlyImageDataFileManager* dataFileManager;
 
-#ifdef FlyImage_WebP
+#ifdef FLYIMAGE_WEBP
 @property (nonatomic, assign) BOOL autoConvertWebP; // Should convert WebP file to JPEG file automaticlly. Default is NO. If yes, it will speed up retrieving operation for the next time.
 @property (nonatomic, assign) CGFloat compressionQualityForWebP; // Default is 0.8.
 #endif

@@ -4,7 +4,6 @@ platform :ios, '8.0'
 inhibit_all_warnings!
 
 target "FlyImage" do
-    pod 'AFNetworking', '~> 3.1'
-	pod 'libwebp', '~> 0.5'
+  pod 'AFNetworking', '~> 3.1'
+	pod 'libwebp', '0.6'
 end
-
