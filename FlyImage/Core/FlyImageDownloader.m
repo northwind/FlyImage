@@ -152,12 +152,11 @@
     return self;
 }
 
-// 8.0以上生成Background Session，以下默认为普通session
 + (NSURLSessionConfiguration*)configurationWithIdentifier:(NSString*)identifier
 {
     NSURLSessionConfiguration* configuration;
 #if (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 80000) || (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 1100)
-    configuration = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:identifier];
+    configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
 #else
     configuration = [NSURLSessionConfiguration backgroundSessionConfiguration:identifier];
 #endif
