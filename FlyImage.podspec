@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FlyImage"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.summary      = "Download, cache, render small images with UIImageView category"
   s.description  = 	'FlyImage takes the advantages of SDWebImage, FastImageCache and AFNetworking, '      \
   				   	'is a simple and high performance image library.Features: '      \
