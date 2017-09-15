@@ -14,7 +14,6 @@
 - (id)imageViewWithFrame:(CGRect)frame {
 	UIImageView *imageView = [[UIImageView alloc] initWithFrame:frame];
 	imageView.contentMode = UIViewContentModeScaleAspectFill;
-	imageView.layer.masksToBounds = YES;
 	imageView.layer.cornerRadius = 10;
 	[self addSubview:imageView];
 	
