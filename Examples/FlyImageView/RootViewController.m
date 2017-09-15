@@ -9,8 +9,12 @@
 #import "RootViewController.h"
 #import "BaseTableViewCell.h"
 #import "SDImageCache.h"
+#import <SDWebImageManager.h>
 
-@interface RootViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface RootViewController () <UITableViewDataSource, UITableViewDelegate, SDWebImageManagerDelegate>
+
+@property (nonatomic, assign) CGFloat itemWidth;
+@property (nonatomic, assign) CGFloat itemHeight;
 
 @end
 
@@ -76,11 +80,27 @@
 	[_segment setSelectedSegmentIndex:_activeIndex];
 	[_segment addTarget:self action:@selector(onTapSegment) forControlEvents:UIControlEventValueChanged];
 	[self.view addSubview:_segment];
+    
+    SDWebImageManager *sdManager = [SDWebImageManager sharedManager];
+    sdManager.delegate = self;
+    
+    _itemWidth = floor(self.view.frame.size.width / _cellsPerRow) - 4;
+    _itemHeight = _heightOfCell - 4;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - SDWebImageManagerDelegate
+
+- (UIImage *)imageManager:(SDWebImageManager *)imageManager transformDownloadedImage:(UIImage *)image withURL:(NSURL *)imageURL{
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(_itemWidth, _heightOfCell), NO, [UIScreen mainScreen].scale);
+    
+    CGRect box = CGRectMake(0, 0, _itemWidth, _itemHeight);
+    [[UIBezierPath bezierPathWithRoundedRect:box cornerRadius:10.f] addClip];
+    [image drawInRect:box];
+    
+    UIImage* ret = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    return ret;
 }
 
 - (BOOL)prefersStatusBarHidden {
